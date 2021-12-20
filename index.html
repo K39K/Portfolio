@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>KimSangGyu 2021_Portfolio</title>
+    <link rel="stylesheet" href="master.css">
+    <!---AOS CSS--->
+    <link rel="stylesheet" href="aos.css">
+    <!---AOS CSS--->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+  </head>
+  <style>
+
+      .container .item {
+        width: 600px;
+        height: 180px;
+        font-size: 35px;
+        /*카드의 뒷면을 안보이게 처리-카드가 뒤집히면 뒷면이 안보임*/
+        backface-visibility: hidden;
+        transition: 1s;
+      }
+
+      .container .item.front {
+        /* 앞면 카드가 부유하게 되어, 뒷면 카드가 아래에서 위로 올라감 -> 요소 두개가 겹치게 됨*/
+        position: absolute;
+        /* 명시적으로 기본값 설정, 없어도 됨*/
+        transform: rotateY(0deg);
+      }
+
+      .container:hover .item.front {
+        transform: rotateY(180deg);
+      }
+
+      .container .item.back {
+        /*y축을 중심으로 -180도 회전*/
+        transform: rotateY(-180deg);
+      }
+
+      .container:hover .item.back {
+        transform: rotateY(0deg);
+}
+
+  </style>
+
+
+
+  <body>
+
+  <section>
+
+<div class="all_wrap">
+
+    <div id="target1">
+    <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="img/tlogo.png" alt="">
+    </div>
+    </div>
+              <div class="guide_wrap">
+                    <div class="guide1 gui01">
+                          <img src="img/blogo.png" alt="">
+                    </div>
+                    <div class="guide2 gui01">
+                      <a href="#target1" class="scroll">
+                          <img src="img/btop.png" alt="">
+                      </a>
+                    </div>
+                    <div class="guide3 gui01">
+                      <a href="#targetcon" class="scroll">
+                          <img src="img/bcon.png" alt="">
+                      </a>
+                    </div>
+                    <div class="guide3 gui01">
+                      <a href="#target2" class="scroll">
+                          <img src="img/bpor.png" alt="">
+                      </a>
+                    </div>
+                    <div class="guide4 gui01">
+                      <a href="#target3" class="scroll">
+                          <img src="img/bmot.png" alt="">
+                      </a>
+                    </div>
+                    <div class="guide5 gui01">
+                      <a href="#target4" class="scroll">
+                          <img src="img/bpos.png" alt="">
+                      </a>
+                    </div>
+                    <div class="guide6 gui01">
+                      <a href="#target5" class="scroll">
+                          <img src="img/bui.png" alt="">
+                      </a>
+                    </div>
+                    <div class="guide7 gui01">
+                      <a href="#target6" class="scroll">
+                          <img src="img/bbro.png" alt="">
+                      </a>
+                    </div>
+                    <div class="guide8 gui01">
+                      <a href="#target7" class="scroll">
+                          <img src="img/bcha.png" alt="">
+                      </a>
+                    </div>
+                    <div class="guide19 gui01">
+                      <a href="#target8" class="scroll">
+                          <img src="img/bint.png" alt="">
+                      </a>
+                    </div>
+              </div>
+    <!---top--->
+
+<div class="top">
+    <div class="m1">
+<a href="#target2" class="scroll">
+      <img src="img/m1.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1500"
+      alt="">
+      <img src="img/m2.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1800"
+      alt="">
+      <img src="img/m3.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2100"
+      alt="">
+      <img src="img/m4.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2400"
+      alt="">
+      <img src="img/m5.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2700"
+      alt="">
+      <img src="img/m6.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000"
+      alt="">
+</a>
+    </div>
+    <div class="m2">
+<a href="#target2" class="scroll">
+      <img src="img/m7.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1500"
+      alt="">
+      <img src="img/m8.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1800"
+      alt="">
+      <img src="img/m9.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2100"
+      alt="">
+      <img src="img/m10.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2400"
+      alt="">
+      <img src="img/m11.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2700"
+      alt="">
+      <img src="img/m12.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000"
+      alt="">
+    </div>
+</a>
+    <div class="m3">
+<a href="#target2" class="scroll">
+      <img src="img/m13.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1500"
+      alt="">
+      <img src="img/m14.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1800"
+      alt="">
+      <img src="img/m15.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2100"
+      alt="">
+      <img src="img/m16.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2400"
+      alt="">
+      <img src="img/m17.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2700"
+      alt="">
+      <img src="img/m18.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000"
+      alt="">
+</a>
+    </div>
+    <div class="m4">
+<a href="#target2" class="scroll">
+      <img src="img/m19.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1500"
+      alt="">
+      <img src="img/m20.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1800"
+      alt="">
+      <img src="img/m21.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2100"
+      alt="">
+      <img src="img/m22.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2400"
+      alt="">
+      <img src="img/m23.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2700"
+      alt="">
+      <img src="img/m24.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000"
+      alt="">
+</a>
+    </div>
+    <div class="m5">
+<a href="#target2" class="scroll">
+      <img src="img/m25.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1500"
+      alt="">
+      <img src="img/m26.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1800"
+      alt="">
+      <img src="img/m27.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2100"
+      alt="">
+      <img src="img/m28.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2400"
+      alt="">
+      <img src="img/m29.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2700"
+      alt="">
+      <img src="img/m30.png"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="3000"
+      alt="">
+</a>
+    </div>
+</div>
+    <!---top end--->
+
+<div class="wt01">  </div>
+
+    <!---profile--->
+
+<div id="targetcon">
+    <div class="profile_wrap">
+      <div class="photo">
+        <img src="img/p_photo.png"
+        data-aos="fade-up"
+        data-aos-duration="1000"alt="">
+        <div class="name">
+          <img src="img/p_name.png"
+          data-aos="fade-up"
+          data-aos-duration="1300"alt="">
+        </div>
+        <div class="birth">
+          <img src="img/p_birth.png"
+          data-aos="fade-up"
+          data-aos-duration="1600"alt="">
+        </div>
+        <div class="ph">
+          <img src="img/p_ph.png"
+          data-aos="fade-up"
+          data-aos-duration="1900"alt="">
+        </div>
+        <div class="mail">
+          <img src="img/p_mail.png"
+          data-aos="fade-up"
+          data-aos-duration="2200"alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wt100">  </div>
+
+    <div class="skill_wrap">
+      <div class="skill">
+        <img src="img/skills.png" alt="">
+        <div class="ps">
+          <img src="img/ps.png" data-aos="flip-right"
+          data-aos-duration="1000"alt="">
+            <div class="sk_ps skill_box">
+              <img src="img/ps_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="400"alt="">
+              <img src="img/ps_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="600"alt="">
+              <img src="img/ps_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1000"alt="">
+              <img src="img/ps_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1400"alt="">
+              <img src="img/ps_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1800"alt="">
+              <img src="img/ps_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="2200"alt="">
+              <img src="img/ps_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="2600"alt="">
+              <img src="img/ps_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="3000"alt="">
+            </div>
+        </div>
+        <div class="ai">
+          <img src="img/ai.png" data-aos="flip-right"
+          data-aos-duration="1000"alt="">
+            <div class="sk_ai skill_box">
+              <img src="img/ai_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="400"alt="">
+              <img src="img/ai_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="600"alt="">
+              <img src="img/ai_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1000"alt="">
+              <img src="img/ai_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1400"alt="">
+              <img src="img/ai_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1800"alt="">
+              <img src="img/ai_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="2200"alt="">
+              <img src="img/ai_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="2600"alt="">
+            </div>
+        </div>
+        <div class="id">
+          <img src="img/id.png" data-aos="flip-right"
+          data-aos-duration="1000"alt="">
+            <div class="sk_id skill_box">
+              <img src="img/id_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="400"alt="">
+              <img src="img/id_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="600"alt="">
+              <img src="img/id_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1000"alt="">
+              <img src="img/id_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1400"alt="s">
+            </div>
+        </div>
+        <div class="ae">
+          <img src="img/ae.png" data-aos="flip-right"
+          data-aos-duration="1000"alt="">
+            <div class="sk_ae skill_box">
+              <img src="img/ae_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="400"alt="">
+              <img src="img/ae_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="600"alt="">
+              <img src="img/ae_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1000"alt="">
+              <img src="img/ae_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1400"alt="">
+              <img src="img/ae_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1800"alt="">
+              <img src="img/ae_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="2200"alt="">
+              <img src="img/ae_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="2600"alt="">
+            </div>
+          </div>
+        <div class="dw">
+          <img src="img/dw.png" data-aos="flip-right"
+          data-aos-duration="1000"alt="">
+            <div class="sk_dw skill_box">
+              <img src="img/dw_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="400"alt="">
+              <img src="img/dw_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="600"alt="">
+            </div>
+        </div>
+        <div class="xd">
+          <img src="img/xd.png" data-aos="flip-right"
+          data-aos-duration="1000"alt="">
+            <div class="sk_xd skill_box">
+              <img src="img/xd_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="400"alt="">
+              <img src="img/xd_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="600"alt="">
+              <img src="img/xd_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1000"alt="">
+              <img src="img/xd_b.png"
+              data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="500"
+     data-aos-duration="1400"alt="">
+            </div>
+        </div>
+  </div>
+</div>
+
+    <!---profile end--->
+
+<div class="wt100">  </div>
+
+    <!---edu_cer--->
+
+    <div class="edu_wrap">
+      <div class="edu">
+        <img src="img/p01.png"
+        data-aos="fade-up"
+     data-aos-duration="1500"alt="">
+      </div>
+      <div class="edu">
+        <img src="img/p02.png"
+        data-aos="fade-up"
+     data-aos-duration="1500"alt="">
+      </div>
+      <div class="edu">
+        <img src="img/p03.png"
+        data-aos="fade-up"
+     data-aos-duration="1500"alt="">
+      </div>
+      <div class="edu">
+        <img src="img/p04.png"
+        data-aos="fade-up"
+     data-aos-duration="1500"alt="">
+      </div>
+      <div class="edu">
+        <img src="img/p05.png"
+        data-aos="fade-up"
+     data-aos-duration="1500"alt="">
+      </div>
+      <div class="edu">
+        <img src="img/p06.png"
+        data-aos="fade-up"
+     data-aos-duration="1500"alt="">
+      </div>
+      <div class="edu">
+        <img src="img/p07.png"
+        data-aos="fade-up"
+     data-aos-duration="1500"alt="">
+      </div>
+      <div class="edu">
+        <img src="img/p08.png"
+        data-aos="fade-up"
+     data-aos-duration="1500"alt="">
+      </div>
+      <div class="edu">
+        <img src="img/p09.png"
+        data-aos="fade-up"
+     data-aos-duration="1500"alt="">
+      </div>
+      <div class="edu">
+        <img src="img/p10.png"
+        data-aos="fade-up"
+     data-aos-duration="1500"alt="">
+      </div>
+      <div class="edu">
+        <img src="img/p11.png"
+        data-aos="fade-up"
+     data-aos-duration="1500"alt="">
+      </div>
+      <div class="edu">
+        <img src="img/p12.png"
+        data-aos="fade-up"
+     data-aos-duration="1500"alt="">
+      </div>
+    </div>
+
+    <!---edu_cer end--->
+
+<div class="wt03">  </div>
+<div id="target2">
+    <div class="portfolio">
+      <img src="img/3dpor.png"
+      data-aos="zoom-in"
+      data-aos-duration="1000"alt="">
+    </div>
+</div>
+<div class="wt150">  </div>
+
+    <div class="all_categori">
+        <li>Motion Graphics</li>
+        <li>Poster Design</li>
+        <li>UI/UX Design</li>
+        <li>Brochure Design</li>
+        <li>Character Design</li>
+    </div>
+
+<div class="wt02">  </div>
+
+
+  <!---motion graphics--->
+
+
+
+<div id="target3">
+    <div class="mot_top">
+      <img src="img/mot.png"
+      data-aos="fade-right"
+      data-aos-duration="1500"alt="">
+        <div class="box_mot">
+        <img src="img/box_mot.png" alt="">
+      </div>
+    </div>
+</div>
+    <div class="motbg">
+      <div class="mot_por">
+        <iframe width="794" height="447" src="https://www.youtube.com/embed/uBHBTf9c4u4"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      </div>
+    </div>
+
+<div class="m_mov_wrap">
+  <div class="muse_mov"
+      data-aos="fade-up"
+      data-aos-duration="1000">
+  <video muted autoplay loop>
+      <source src="img/muse_mov.mp4" type="video/mp4">
+    </video>
+
+  </div>
+</div>
+
+    <div class="wt15"> </div>
+
+<div class="muse_wrap">
+  <div class="muse01">
+
+    <img src="img/muse01.png"
+    data-aos="fade-right"
+    data-aos-duration="1500"alt="">
+
+</div>
+      <div class="muse1">
+        <img src="img/muse1.png" alt="">
+      </div>
+      <div class="muse1">
+        <img src="img/muse2.png" alt="">
+      </div>
+    </div>
+
+<div class="wt15"></div>
+
+    <div class="muse_youtube">
+        <div class="muse_link">
+          <iframe width="191" height="108" src="https://www.youtube.com/embed/_5SjOAFT4Xs"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+        <div class="muse_link">
+          <iframe width="191" height="108" src="https://www.youtube.com/embed/rQlJmoTlV5c"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+        <div class="muse_link">
+          <iframe width="191" height="108" src="https://www.youtube.com/embed/85ALDBEPbH0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+        <div class="muse_link">
+          <iframe width="191" height="108" src="https://www.youtube.com/embed/vCLlHtrQbCw"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        </div>
+    </div>
+
+<div class="wt200"></div>
+
+<div class="m_mov_wrap">
+  <div class="muse_mov"
+      data-aos="fade-up"
+      data-aos-duration="1000">
+  <video muted autoplay loop>
+      <source src="img/robot_mov.mp4" type="video/mp4">
+    </video>
+
+  </div>
+</div>
+
+<div class="wt15"></div>
+
+
+  <div class="mot_rh">
+    <iframe width="794" height="447" src="https://www.youtube.com/embed/oXD8MKx01Vw"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  </div>
+  <div class="mot_rh">
+    <img src="img/robot1.png" alt="">
+  </div>
+
+<div class="wt200"></div>
+
+<div class="m_mov_wrap">
+  <div class="muse_mov"
+      data-aos="fade-up"
+      data-aos-duration="1000">
+  <video muted autoplay loop>
+      <source src="img/how_mov.mp4" type="video/mp4">
+    </video>
+
+  </div>
+</div>
+
+<div class="wt15"></div>
+
+
+  <div class="mot_rh">
+    <iframe width="794" height="447" src="https://www.youtube.com/embed/WXXKRCjC21A"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+  </div>
+  <div class="mot_rh">
+    <img src="img/howclose1.png" alt="">
+  </div>
+  <!---motion graphics end--->
+
+<div class="wt04">  </div>
+
+  <!---poster--->
+
+<div id="target4">
+
+    <div class="pos_top">
+      <img src="img/pos.png"
+      data-aos="fade-right"
+      data-aos-duration="1500"alt="">
+        <div class="box_pos">
+          <img src="img/box_pos.png" alt="">
+        </div>
+    </div>
+</div>
+      <div class="pos_wrap">
+        <div class="pos_bg">
+          <img src="img/pos_bg.png" alt="">
+        </div>
+        <div class="pos1">
+
+          <div class="pos1">
+            <img src="img/pos1.png" alt="">
+          </div>
+          <div class="pos1">
+            <img src="img/pos2.png" alt="">
+          </div>
+          <div class="pos1">
+            <img src="img/pos3.png" alt="">
+          </div>
+          <div class="pos01">
+            <div class="container">
+                  <div class="item front"><img src="img/pos01.png"alt=""></div>
+                  <div class="item back"><img src="img/pos02.png" alt=""></div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+  <!---poster end--->
+
+<div class="wt05">  </div>
+
+  <!---ui--->
+
+<div id="target5">
+
+  <div class="ui_top">
+    <img src="img/ui.png"
+    data-aos="fade-right"
+    data-aos-duration="1500"alt="">
+      <div class="box_ui">
+        <img src="img/box_ui.png" alt="">
+      </div>
+  </div>
+
+</div>
+  <div class="wt150">  </div>
+
+  <div class="adi_wrap">
+
+    <div class="adi01">
+      <div class="container">
+            <div class="item front"><img src="img/adi01.png"alt=""></div>
+            <div class="item back"><img src="img/adi02.png" alt=""></div>
+          </div>
+    </div>
+
+        <div class="adi1">
+          <img src="img/adi1.png" alt="">
+        </div>
+        <div class="adi2">
+          <img src="img/adi2.png" alt="">
+        </div>
+      </div>
+<div class="wt100">  </div>
+
+      <div class="kb1">
+          <img src="img/kb1.png" alt="">
+      </div>
+
+<div class="wt100">  </div>
+      <div class="kb01">
+          <img src="img/kb01.png"
+          data-aos="fade-up"
+          data-aos-duration="1200"alt="">
+      </div>
+
+  <!---ui end--->
+
+<div class="wt300">  </div>
+
+  <!---brochure--->
+
+<div id="target6">
+  <div class="bro_top">
+    <img src="img/bro.png"
+    data-aos="fade-right"
+    data-aos-duration="1500"alt="">
+      <div class="box_bro">
+        <img src="img/box_bro.png" alt="">
+      </div>
+  </div>
+</div>
+  <div class="bro_wrap">
+    <div class="bro01">
+      <img src="img/bro01.png"
+      data-aos="fade-right"
+      data-aos-duration="1500"alt="">
+    </div>
+<div class="wt125">  </div>
+        <div class="bro1">
+          <img src="img/bro1.png" alt="">
+        </div>
+        <div class="bro1">
+          <img src="img/bro2.png" alt="">
+        </div>
+      </div>
+  <!---brochure end--->
+
+<div class="wt150">  </div>
+
+  <!---character end--->
+
+<div id="target7">
+  <div class="cha_top">
+    <img src="img/cha.png"
+    data-aos="fade-right"
+    data-aos-duration="1500"alt="">
+      <div class="box_cha">
+        <img src="img/box_cha.png" alt="">
+      </div>
+    </div>
+</div>
+<div class="cha_wrap">
+  <div class="cha01">
+    <img src="img/cha01.png"
+    data-aos="fade-right"
+    data-aos-duration="1500"alt="">
+  </div>
+  <div class="cha02">
+    <img src="img/cha02.png"
+    data-aos="fade-right"
+    data-aos-duration="1000"alt="">
+  </div>
+<div class="wt125">  </div>
+      <div class="cha1">
+        <img src="img/cha1.png" alt="">
+      </div>
+      <div class="cha1">
+        <img src="img/cha2.png" alt="">
+      </div>
+    </div>
+
+  <!---character end--->
+
+<div class="wt300">  </div>
+    <div class="int_b">
+          <img src="img/int_b1.png" alt="">
+    </div>
+<div id="target8">
+    <div class="interview1">
+        <img src="img/inter.png" alt="">
+    </div>
+</div>
+<div class="wt200">  </div>
+
+    <div class="interview2">
+      <iframe width="794" height="447" src="https://www.youtube.com/embed/CWcrfxPTV0k"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    </div>
+
+    <div class="int_b">
+          <img src="img/int_b2.png" alt="">
+    </div>
+
+<div class="wt300">  </div>
+
+<a href="#target1" class="scroll">
+  <div class="u_logo">
+      <img src="img/u_logo.png" data-aos="zoom-in" data-aos-duration="1000"alt="">
+  </div>
+</a>
+
+<div class="wt200">  </div>
+
+<div class="under">
+    <img src="img/under.png" alt="">
+</div>
+
+</div>
+
+  </section>
+  <footer>
+
+  </footer>
+  <!---AOS스크립트--->
+    <script src="aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+    <!---AOS스크립트--->
+
+<script>
+jQuery(document).ready(function($) {
+
+        $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 100);
+        });
+});
+</script>
+
+  </body>
+</html>
